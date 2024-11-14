@@ -5,38 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
   <title>Frontend Mentor | Clock App</title>
 </head>
 
-<body class="bg-imageJourMobile bg-no-repeat">
-  <div class="px-6"> <!-- wrapper -->
+<body class="font-inter text-texteBlanc">
+  <div class="relative w-full h-screen"><!-- ctn relative pour bg -->
+    <div class="w-full h-full bg-imageJourTable bg-no-repeat bg-center bg-cover"></div><!-- img-background -->
+    <div class="absolute inset-0 bg-black/45 flex justify-start items-start z-50"><!-- bg-black opacity -->
+      <div class="px-6"> <!-- wrapper -->
+
+        <div class="flex flex-col justify-between"><!-- quote -->
+          <div class="w-full h-fit flex flex-row justify-between mt-8 gap-3
+        md:mt-20 md:max-w-[600px] 
+        lg:mt-14">
+            <div class="flex flex-col text-xs">
+              <p class="mb-2">“The science of operations, as derived from mathematics more especially, is a science
+                of itself, and has its
+                own abstract truth and value.”</p>
+
+              <p class="font-bold ">Ada Lovelace</p>
+            </div>
+            <img class="w-4 h-4" src="./assets/icons/icon-refresh.svg" alt="refresh icon">
+          </div>
+
+          <div class="flex flex-col justify-between">
+            <div class="flex flex-row gap-4">
+              <img class="w-6 h-6" src="./assets/icons/icon-sun.svg" alt="icone soleil">
+              <p class="uppercase text-base flex gap-1">good morning,
+                <span class="hidden md:block"> it's currently</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-row items-center">
+            <p class=" text-[100px] md:text-[175px] font-bold">11:37</p>
+            <span class="uppercase relative top-[30px] md:top-[55px] text-[15px]">bst</span>
+          </div>
 
 
-    <div class="w-full h-fit flex flex-row justify-between">
-      <div class="flex flex-col text-texteBlanc text-xs">
-        <p class="">“The science of operations, as derived from mathematics more especially, is a science
-          of itself, and has its
-          own abstract truth and value.”</p>
 
-        <p class="font-bold ">Ada Lovelace</p>
-        <!-- <img src="./assets/desktop/bg-image-daytime.jpg" alt=""> -->
+        </div>
+
+
+
+
+
       </div>
-
-      <img class="w-4 h-4" src="./assets/icons/icon-refresh.svg" alt="refresh icon">
-
     </div>
-
-
-
-
-
-
-
-
-
+  </div>
   </div>
 </body>
 
