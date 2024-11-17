@@ -23,13 +23,14 @@ table = xl
   <div class="relative w-full h-screen"><!-- ctn relative pour bg -->
     <div class="w-full h-full bg-imageJourTable bg-no-repeat bg-center bg-cover justify-between"></div>
     <!-- img-background -->
-    <div class="absolute inset-0 bg-black/45 flex justify-start items-start z-50"><!-- bg-black opacity -->
-      <div class="h-screen flex flex-col justify-between px-6 md:px-16 xl:px-40 pb-10 md:pb-16 xl:pb-24">
+    <div class="absolute inset-0 bg-black/40 md:bg-black/45 xl:bg-black/50 flex justify-start items-start z-50">
+      <!-- bg-black opacity -->
+      <div class="w-full h-screen flex flex-col justify-between px-6 md:px-16 xl:px-40 pb-10 md:pb-16 xl:pb-24">
         <!-- wrapper -->
 
 
         <div class="w-full h-fit flex flex-row justify-between mt-8 gap-3
-        md:mt-20 md:max-w-[600px] xl:mt-14"><!-- quote -->
+        md:mt-20 max-w-[572px] xl:mt-14"><!-- quote -->
 
           <div class="flex flex-col text-xs md:text-xl">
             <p class="mb-2">“The science of operations, as derived from mathematics more especially, is a science
@@ -42,40 +43,42 @@ table = xl
         </div>
 
 
-        <div class="">
-          <div class="flex flex-col">
-            <div class="flex flex-row gap-4">
-              <img class="w-6 h-6" src="./assets/icons/icon-sun.svg" alt="icone soleil">
-              <p class="uppercase text-[15px] md:text-xl xl:text-xl flex gap-1">good morning,
-                <span class="hidden md:block"> it's currently</span>
-              </p>
+        <div class="flex flex-col xl:flex-row xl:items-end xl:justify-between">
+          <div class="mb-12 md:mb-20 xl:mb-0">
+            <div class="flex flex-col">
+              <div class="flex flex-row gap-4">
+                <img class="w-6 h-6" src="./assets/icons/icon-sun.svg" alt="icone soleil">
+                <p class="uppercase text-[15px] md:text-xl xl:text-xl flex gap-1">good morning,
+                  <span class="hidden md:block"> it's currently</span>
+                </p>
+              </div>
             </div>
+
+            <div class="flex flex-row items-center">
+              <p class="text-[100px] md:text-[175px] leading-none font-bold my-2">11:37</p>
+              <span
+                class="uppercase relative top-[30px] md:top-[55px] text-[15px] md:text-[32px] xl:text-[40px]">bst</span>
+            </div>
+
+            <p class="uppercase text-[15px] md:text-lg xl:text-2xl font-bold">in london, Uk</p>
           </div>
 
-          <div class="flex flex-row items-center">
-            <p class="text-[100px] md:text-[175px] leading-none font-bold my-2">11:37</p>
-            <span
-              class="uppercase relative top-[30px] md:top-[55px] text-[15px] md:text-[32px] xl:text-[40px]">bst</span>
-          </div>
+          <button type="button" id="btnMore"
+            class="group w-28 md:w-36 h-10 md:h-14 flex flex-row flex-nowrap justify-center items-center bg-buttonBackground rounded-full gap-3">
+            <span class="text-black opacity-50 font-bold text-xs md:text-base uppercase">
+              more
+            </span>
+            <div
+              class="bg-buttonActif w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-colors duration-200 group-hover:bg-buttonHover">
+              <svg id="chevron" width="14" height="9" xmlns="http://www.w3.org/2000/svg"
+                class="stroke-current text-white transition-colors duration-300">
+                <path stroke="currentColor" stroke-width="2" fill="none" d="m1 1 6 6 6-6" />
+              </svg>
+            </div>
+          </button>
 
-          <p class="uppercase text-[15px] md:text-lg xl:text-2xl font-bold">in london, Uk</p>
         </div>
-
-        <button type="button" id="btnMore"
-          class="group w-28 md:w-36 h-10 md:h-14 flex flex-row flex-nowrap justify-center items-center bg-buttonBackground rounded-full gap-3">
-          <span class="text-black opacity-50 font-bold text-xs md:text-base uppercase">
-            more
-          </span>
-          <div
-            class="bg-buttonActif w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-colors duration-200 group-hover:bg-buttonHover">
-            <svg id="chevron" width="14" height="9" xmlns="http://www.w3.org/2000/svg"
-              class="stroke-current text-white transition-colors duration-300">
-              <path stroke="currentColor" stroke-width="2" fill="none" d="m1 1 6 6 6-6" />
-            </svg>
-          </div>
-        </button>
-
-      </div> <!-- Fin wrapper -->
+      </div><!-- Fin wrapper -->
     </div>
   </div>
 </body>
