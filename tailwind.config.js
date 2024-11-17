@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         texteGris: "#303030",
         texteBlanc: "#FFFFFF",
+        buttonBackground: "#FFFFFF",
+        buttonActif: "#303030",
+        buttonHover: "#999999",
       },
       backgroundImage: {
         imageJourTable: "url('../assets/desktop/bg-image-daytime.jpg')",
