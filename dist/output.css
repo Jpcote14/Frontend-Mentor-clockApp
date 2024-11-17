@@ -566,20 +566,16 @@ video {
   inset: 0px;
 }
 
-.top-\[30px\] {
-  top: 30px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
 
-.bottom-\[100px\] {
-  bottom: 100px;
-}
-
 .left-0 {
   left: 0px;
+}
+
+.top-\[30px\] {
+  top: 30px;
 }
 
 .z-50 {
@@ -608,6 +604,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -616,8 +616,8 @@ video {
   margin-top: 2rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.box-border {
+  box-sizing: border-box;
 }
 
 .flex {
@@ -677,6 +677,10 @@ video {
   width: 2rem;
 }
 
+.w-\[1px\] {
+  width: 1px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -734,12 +738,21 @@ video {
   gap: 1rem;
 }
 
-.gap-20 {
-  gap: 5rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-texteGris {
+  --tw-border-opacity: 1;
+  border-color: rgb(48 48 48 / var(--tw-border-opacity));
+}
+
+.border-opacity-25 {
+  --tw-border-opacity: 0.25;
 }
 
 .bg-black {
@@ -807,22 +820,22 @@ video {
   font-size: 100px;
 }
 
-.text-\[15px\] {
-  font-size: 15px;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-\[10px\] {
   font-size: 10px;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -833,20 +846,16 @@ video {
   text-transform: uppercase;
 }
 
-.leading-none {
-  line-height: 1;
-}
-
 .leading-4 {
   line-height: 1rem;
 }
 
-.tracking-\[2px\] {
-  letter-spacing: 2px;
+.leading-none {
+  line-height: 1;
 }
 
-.tracking-\[3px\] {
-  letter-spacing: 3px;
+.tracking-\[2px\] {
+  letter-spacing: 2px;
 }
 
 .text-black {
@@ -859,14 +868,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-texteGris {
   --tw-text-opacity: 1;
   color: rgb(48 48 48 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-50 {
@@ -902,6 +911,10 @@ video {
     top: 55px;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -912,6 +925,10 @@ video {
 
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:h-10 {
@@ -938,12 +955,16 @@ video {
     flex-direction: column;
   }
 
-  .md\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
   .md\:items-start {
     align-items: flex-start;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
+  .md\:gap-20 {
+    gap: 5rem;
   }
 
   .md\:bg-black\/45 {
@@ -960,13 +981,13 @@ video {
     padding-bottom: 8rem;
   }
 
-  .md\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
   .md\:pb-16 {
     padding-bottom: 4rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-\[175px\] {
@@ -992,11 +1013,6 @@ video {
     line-height: 1.75rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:tracking-\[2\.6px\] {
     letter-spacing: 2.6px;
   }
@@ -1015,6 +1031,10 @@ video {
     margin-top: 3.5rem;
   }
 
+  .xl\:flex {
+    display: flex;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
   }
@@ -1025,6 +1045,10 @@ video {
 
   .xl\:justify-between {
     justify-content: space-between;
+  }
+
+  .xl\:gap-14 {
+    gap: 3.5rem;
   }
 
   .xl\:gap-2 {
@@ -1040,9 +1064,9 @@ video {
     padding-right: 10rem;
   }
 
-  .xl\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  .xl\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .xl\:pb-24 {
@@ -1054,6 +1078,15 @@ video {
     line-height: 2rem;
   }
 
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:text-\[15px\] {
+    font-size: 15px;
+  }
+
   .xl\:text-\[40px\] {
     font-size: 40px;
   }
@@ -1061,15 +1094,6 @@ video {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-\[15px\] {
-    font-size: 15px;
-  }
-
-  .xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .xl\:tracking-\[3px\] {
