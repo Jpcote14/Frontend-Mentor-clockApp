@@ -15,21 +15,23 @@ table = xl
   <link href="dist/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <script defer src="./src/js/Bouton.js"></script>
   <title>Frontend Mentor | Clock App</title>
 </head>
+
+<!-- ajouter le letter spacing un peu partout dans la maquette -->
 
 <body class="font-inter text-texteBlanc">
   <div class="relative w-full h-screen"><!-- ctn relative pour bg -->
     <div class="w-full h-full bg-imageJourTable bg-no-repeat bg-center bg-cover justify-between"></div>
+
     <!-- img-background -->
     <div class="absolute inset-0 bg-black/40 md:bg-black/45 xl:bg-black/50 flex justify-start items-start z-50">
       <!-- bg-black opacity -->
       <div class="w-full h-screen flex flex-col justify-between px-6 md:px-16 xl:px-40 pb-10 md:pb-16 xl:pb-24">
         <!-- wrapper -->
 
-
-        <div class="w-full h-fit flex flex-row justify-between mt-8 gap-3
+        <div id="quote" class="hidden w-full h-fit flex flex-row justify-between mt-8 gap-3
         md:mt-20 max-w-[572px] xl:mt-14"><!-- quote -->
 
           <div class="flex flex-col text-xs md:text-xl">
@@ -64,12 +66,12 @@ table = xl
           </div>
 
           <button type="button" id="btnMore"
-            class="group w-28 md:w-36 h-10 md:h-14 flex flex-row flex-nowrap justify-center items-center bg-buttonBackground rounded-full gap-3">
-            <span class="text-black opacity-50 font-bold text-xs md:text-base uppercase">
+            class="group w-28 md:w-36 h-10 md:h-14 flex flex-row flex-nowrap justify-center items-center bg-buttonBackground rounded-full">
+            <span id="btnMoreLibelle" class="text-black opacity-50 font-bold text-xs md:text-base uppercase mx-auto">
               more
             </span>
             <div
-              class="bg-buttonActif w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center transition-colors duration-200 group-hover:bg-buttonHover">
+              class="bg-buttonActif w-8 h-8 md:w-10 md:h-10 mr-2 rounded-full flex items-center justify-center transition-colors duration-200 group-hover:bg-buttonHover">
               <svg id="chevron" width="14" height="9" xmlns="http://www.w3.org/2000/svg"
                 class="stroke-current text-white transition-colors duration-300">
                 <path stroke="currentColor" stroke-width="2" fill="none" d="m1 1 6 6 6-6" />
@@ -77,10 +79,56 @@ table = xl
             </div>
           </button>
 
+
+
+        </div>
+
+        <div id="expansion"
+          class="absolute bottom-0 left-0  bg-white/75 w-full h-fit mx-auto text-texteGris z-60 px-6 md:px-16 xl:px-40 py-12 md:py-24 xl:py-20 ">
+
+          <div class="flex flex-col gap-4 mb-4">
+            <div class="flex flex-row justify-between items-center md:items-start md:flex-col xl:gap-2  ">
+              <p
+                class="tracking-[2px] md:tracking-[2.6px] xl:tracking-[3px] text-[10px] md:text-[13] xl:text-[15px] leading-4 uppercase">
+                current timezone
+              </p>
+              <p class="text-xl md:text-4xl xl:text-6xl font-bold">Europe/London</p>
+            </div>
+
+            <div class="flex flex-row justify-between items-center md:items-start md:flex-col xl:gap-2 ">
+              <p
+                class="tracking-[2px] md:tracking-[2.6px] xl:tracking-[3px] text-[10px] md:text-[13] xl:text-[15px] leading-4 uppercase">
+                day of year
+              </p>
+              <p class="text-xl md:text-4xl xl:text-6xl font-bold">295</p>
+            </div>
+          </div>
+
+          <hr class="hidden :xl:block">
+
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-row justify-between items-center md:items-start md:flex-col xl:gap-2">
+              <p
+                class="tracking-[2px] md:tracking-[2.6px] xl:tracking-[3px] text-[10px] md:text-[13] xl:text-[15px] leading-4 uppercase">
+                day of week
+              </p>
+              <p class="text-xl md:text-4xl xl:text-6xl font-bold">5</p>
+            </div>
+
+            <div class="flex flex-row justify-between items-center md:items-start md:flex-col xl:gap-2">
+              <p
+                class="tracking-[2px] md:tracking-[2.6px] xl:tracking-[3px] text-[10px] md:text-[13] xl:text-[15px] leading-4 uppercase">
+                week number
+              </p>
+              <p class="text-xl md:text-4xl xl:text-6xl font-bold">42</p>
+            </div>
+          </div>
+
         </div>
       </div><!-- Fin wrapper -->
+
     </div>
-  </div>
+  </div> <!-- Fin bg-img -->
 </body>
 
 </html>
