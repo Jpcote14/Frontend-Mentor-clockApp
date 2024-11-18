@@ -21,10 +21,10 @@ async function fetchTime() {
 // Fonction pour afficher l'heure, le jour de l'année, etc.
 function afficherTemps(data) {
   // Extraire l'heure complète (avec secondes)
-  const heureComplète = data.datetime.split("T")[1].split(".")[0]; // Exemple : "19:30:45"
+  const heureComplete = data.datetime.split("T")[1].split(".")[0]; // Exemple : "19:30:45"
 
   // Extraire uniquement l'heure et les minutes (HH:mm)
-  const heureEtMinutes = heureComplète.slice(0, 5); // Exemple : "19:30"
+  const heureEtMinutes = heureComplete.slice(0, 5); // Exemple : "19:30"
 
   // Extraire le jour de l'année
   const jourAnnee = data.day_of_year;

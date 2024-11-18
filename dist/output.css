@@ -574,6 +574,10 @@ video {
   left: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-\[30px\] {
   top: 30px;
 }
@@ -618,6 +622,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .box-border {
@@ -687,6 +695,11 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .max-w-\[572px\] {
@@ -828,6 +841,10 @@ video {
   font-size: 10px;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -842,10 +859,6 @@ video {
   line-height: 1rem;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -858,28 +871,28 @@ video {
   line-height: 1rem;
 }
 
-.leading-none {
-  line-height: 1;
-}
-
 .leading-\[22px\] {
   line-height: 22px;
 }
 
-.tracking-\[2px\] {
-  letter-spacing: 2px;
-}
-
-.tracking-\[3px\] {
-  letter-spacing: 3px;
+.leading-none {
+  line-height: 1;
 }
 
 .tracking-\[-2\.5px\] {
   letter-spacing: -2.5px;
 }
 
+.tracking-\[2px\] {
+  letter-spacing: 2px;
+}
+
 .tracking-\[3\.75px\] {
   letter-spacing: 3.75px;
+}
+
+.tracking-\[3px\] {
+  letter-spacing: 3px;
 }
 
 .text-black {
@@ -947,16 +960,12 @@ video {
     margin-top: 5rem;
   }
 
-  .md\:mt-40 {
-    margin-top: 10rem;
-  }
-
-  .md\:mt-32 {
-    margin-top: 8rem;
-  }
-
   .md\:mt-28 {
     margin-top: 7rem;
+  }
+
+  .md\:mr-3 {
+    margin-right: 0.75rem;
   }
 
   .md\:block {
@@ -1049,16 +1058,20 @@ video {
     line-height: 1.75rem;
   }
 
+  .md\:text-\[13px\] {
+    font-size: 13px;
+  }
+
+  .md\:tracking-\[-4\.38px\] {
+    letter-spacing: -4.38px;
+  }
+
   .md\:tracking-\[2\.6px\] {
     letter-spacing: 2.6px;
   }
 
   .md\:tracking-\[3\.6px\] {
     letter-spacing: 3.6px;
-  }
-
-  .md\:tracking-\[-4\.38px\] {
-    letter-spacing: -4.38px;
   }
 
   .md\:tracking-\[5px\] {
@@ -1144,19 +1157,23 @@ video {
     line-height: 1.75rem;
   }
 
-  .xl\:tracking-\[3px\] {
-    letter-spacing: 3px;
+  .xl\:tracking-\[-5px\] {
+    letter-spacing: -5px;
   }
 
-  .xl\:tracking-\[4px\] {
-    letter-spacing: 4px;
+  .xl\:tracking-\[3px\] {
+    letter-spacing: 3px;
   }
 
   .xl\:tracking-\[4\.8px\] {
     letter-spacing: 4.8px;
   }
 
-  .xl\:tracking-\[-5px\] {
-    letter-spacing: -5px;
+  .xl\:tracking-\[4px\] {
+    letter-spacing: 4px;
+  }
+
+  .xl\:text-\[\] {
+    color: ;
   }
 }
