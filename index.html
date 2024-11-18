@@ -15,7 +15,7 @@ table = xl
   <link href="dist/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <script defer src="./src/js/Bouton.js"></script>
+  <script defer src="./src/js/Bouton.js"></script>ç
   <title>Frontend Mentor | Clock App</title>
 </head>
 
@@ -31,10 +31,10 @@ table = xl
       <div class="w-full h-screen flex flex-col justify-between px-6 md:px-16 xl:px-40 pb-10 md:pb-16 xl:pb-24">
         <!-- wrapper -->
 
-        <div id="quote" class="hidden w-full h-fit flex flex-row justify-between mt-8 gap-3
+        <div id="quote" class=" w-full h-fit flex flex-row justify-between mt-8 gap-3
         md:mt-20 max-w-[572px] xl:mt-14"><!-- quote -->
 
-          <div class="flex flex-col text-xs md:text-xl">
+          <div class="flex flex-col text-[12px] leading-[22px] md:text-xl">
             <p class="mb-2">“The science of operations, as derived from mathematics more especially, is a science
               of itself, and has its
               own abstract truth and value.”</p>
@@ -46,28 +46,36 @@ table = xl
 
 
         <div class="flex flex-col xl:flex-row xl:items-end xl:justify-between">
-          <div class="mb-12 md:mb-20 xl:mb-0">
+          <div class="mb-12 md:mb-20 xl:mb-0 mt-24 md:mt-28 xl:mt-14 ">
             <div class="flex flex-col">
               <div class="flex flex-row gap-4">
                 <img class="w-6 h-6" src="./assets/icons/icon-sun.svg" alt="icone soleil">
-                <p class="uppercase text-[15px] md:text-xl xl:text-xl flex gap-1">good morning,
+                <p
+                  class="uppercase text-[15px] tracking-[3px] md:tracking-[3.6px] xl:tracking-[4px] md:text-xl xl:text-xl flex gap-1">
+                  good morning,
                   <span class="hidden md:block"> it's currently</span>
                 </p>
               </div>
             </div>
 
             <div class="flex flex-row items-center">
-              <p class="text-[100px] md:text-[175px] leading-none font-bold my-2">11:37</p>
+              <p id="heure"
+                class="heure text-[100px] md:text-[175px] leading-none font-bold my-2 tracking-[-2.5px] md:tracking-[-4.38px] xl:tracking-[-5px]">
+
+              </p>
               <span
                 class="uppercase relative top-[30px] md:top-[55px] text-[15px] md:text-[32px] xl:text-[40px]">bst</span>
             </div>
 
-            <p class="uppercase text-[15px] md:text-lg xl:text-2xl font-bold">in london, Uk</p>
+            <p
+              class="uppercase text-[15px] md:text-lg xl:text-2xl font-bold tracking-[3px] md:tracking-[3.6px] xl:tracking-[4.8px]">
+              in london, Uk</p>
           </div>
 
           <button type="button" id="btnMore"
             class="group w-28 md:w-36 h-10 md:h-14 flex flex-row flex-nowrap justify-center items-center bg-buttonBackground rounded-full">
-            <span id="btnMoreLibelle" class="text-black opacity-50 font-bold text-xs md:text-base uppercase mx-auto">
+            <span id="btnMoreLibelle"
+              class="text-black opacity-50 font-bold text-xs md:text-base tracking-[3.75px] md:tracking-[5px] uppercase mx-auto">
               more
             </span>
             <div
@@ -78,13 +86,10 @@ table = xl
               </svg>
             </div>
           </button>
-
-
-
         </div>
 
         <div id="expansion"
-          class="absolute bottom-0 left-0 md:flex md:flex-row md:gap-20  bg-white/75 w-full h-fit mx-auto text-texteGris z-60 px-6 md:px-16 xl:px-40 py-12 md:py-32 xl:py-24 ">
+          class="hidden absolute bottom-0 left-0 md:flex-row md:gap-20  bg-white/75 w-full h-fit mx-auto text-texteGris z-60 px-6 md:px-16 xl:px-40 py-12 md:py-32 xl:py-24 ">
 
           <div class="flex flex-col gap-4 md:gap-12 xl:gap-14 mb-4 md:mb-0">
             <div class="flex flex-row justify-between items-center md:items-start md:flex-col xl:gap-2  ">
@@ -92,7 +97,7 @@ table = xl
                 class="tracking-[2px] md:tracking-[2.6px] xl:tracking-[3px] text-[10px] md:text-[13] xl:text-[15px] leading-4 uppercase">
                 current timezone
               </p>
-              <p class="text-xl md:text-4xl xl:text-6xl font-bold">Europe/London</p>
+              <p class="currentTimeZone text-xl md:text-4xl xl:text-6xl font-bold">Europe/London</p>
             </div>
 
             <div class="flex flex-row justify-between items-center md:items-start md:flex-col xl:gap-2 ">
@@ -100,7 +105,7 @@ table = xl
                 class="tracking-[2px] md:tracking-[2.6px] xl:tracking-[3px] text-[10px] md:text-[13] xl:text-[15px] leading-4 uppercase">
                 day of year
               </p>
-              <p class="text-xl md:text-4xl xl:text-6xl font-bold">295</p>
+              <p class="jour-annee text-xl md:text-4xl xl:text-6xl font-bold">295</p>
             </div>
           </div>
 
@@ -114,15 +119,15 @@ table = xl
                 class="tracking-[2px] md:tracking-[2.6px] xl:tracking-[3px] text-[10px] md:text-[13] xl:text-[15px] leading-4 uppercase">
                 day of week
               </p>
-              <p class="text-xl md:text-4xl xl:text-6xl font-bold">5</p>
+              <p class="dayOfWeek text-xl md:text-4xl xl:text-6xl font-bold">5</p>
             </div>
 
             <div class="flex flex-row justify-between items-center md:items-start md:flex-col xl:gap-2">
               <p
-                class="tracking-[2px] md:tracking-[2.6px] xl:tracking-[3px] text-[10px] md:text-[13] xl:text-[15px] leading-4 uppercase">
+                class=" tracking-[2px] md:tracking-[2.6px] xl:tracking-[3px] text-[10px] md:text-[13] xl:text-[15px] leading-4 uppercase">
                 week number
               </p>
-              <p class="text-xl md:text-4xl xl:text-6xl font-bold">42</p>
+              <p class="weekNumber text-xl md:text-4xl xl:text-6xl font-bold">42</p>
             </div>
           </div>
 
@@ -131,6 +136,9 @@ table = xl
 
     </div>
   </div> <!-- Fin bg-img -->
+
+  <script src="./src/js/script.js"></script>
+
 </body>
 
 </html>
