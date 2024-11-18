@@ -10,7 +10,6 @@ async function fetchTime() {
     if (!response.ok) throw new Error("Erreur avec l'API World Time");
 
     const data = await response.json();
-    console.log("Données API reçues :", data); // Debug des données
     afficherTemps(data); // Appeler la fonction pour afficher les données
   } catch (error) {
     console.error("Erreur lors de la récupération des données :", error);
