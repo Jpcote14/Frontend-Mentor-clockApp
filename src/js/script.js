@@ -42,10 +42,9 @@ function afficherTemps(data) {
   const divJourSemaine = document.querySelector(".dayOfWeek");
   const divNumeroSemaine = document.querySelector(".weekNumber");
 
-  // Mettre à jour les éléments HTML avec les valeurs extraites
-  if (divHeure) divHeure.textContent = heureEtMinutes; // Afficher l'heure (HH:mm)
-  if (divJourAnnee) divJourAnnee.textContent = `${jourAnnee}`; // Afficher le jour de l'année
-  if (divFuseauHoraire) divFuseauHoraire.textContent = data.timezone; // Afficher le fuseau horaire
-  if (divJourSemaine) divJourSemaine.textContent = jourSemaine; // Afficher le jour de la semaine
-  if (divNumeroSemaine) divNumeroSemaine.textContent = semaineAnnee; // Afficher le numéro de la semaine
+  if (divHeure) divHeure.textContent = heureEtMinutes;
+  if (divJourAnnee) divJourAnnee.textContent = `${jourAnnee}`;
+  if (divFuseauHoraire) divFuseauHoraire.textContent = data.timezone;
+  if (divJourSemaine) divJourSemaine.textContent = jourSemaine;
+  if (divNumeroSemaine) divNumeroSemaine.textContent = semaineAnnee;
 }
