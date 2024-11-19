@@ -1,3 +1,5 @@
+//J'ai atteint le nombre de requetes maximums donc il ne s'affiche plus...
+
 async function obtenirGeolocalisation() {
   const cleApi = "ipb_live_Yg7GDnEzroIgy6gRIUcO4AhEk9d5EroeE3Y9wBVI";
   const url = `https://api.ipbase.com/v2/info?apikey=${cleApi}`;

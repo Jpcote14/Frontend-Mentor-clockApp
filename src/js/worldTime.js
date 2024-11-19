@@ -10,7 +10,8 @@ async function fetchTime() {
     if (!response.ok) throw new Error("Erreur avec l'API World Time");
 
     const data = await response.json();
-    afficherTemps(data); // Appeler la fonction pour afficher les données
+    afficherTemps(data);
+    changerBackground(data);
   } catch (error) {
     console.error("Erreur lors de la récupération des données :", error);
     document.querySelector(".heure").textContent = "Erreur de chargement";
@@ -46,4 +47,17 @@ function afficherTemps(data) {
   if (divFuseauHoraire) divFuseauHoraire.textContent = data.timezone;
   if (divJourSemaine) divJourSemaine.textContent = jourSemaine;
   if (divNumeroSemaine) divNumeroSemaine.textContent = semaineAnnee;
+}
+
+function changerBackground(data) {
+  const heureActuelle = new Date(data.datetime).getHours();
+  const backgroundDiv = document.getElementById("background");
+
+  if (heureActuelle >= 6 && heureActuelle < 18) {
+    backgroundDiv.classList.add("bg-imageJourTable");
+    backgroundDiv.classList.remove("bg-imageNuitTable");
+  } else {
+    backgroundDiv.classList.add("bg-imageNuitTable");
+    backgroundDiv.classList.remove("bg-imageJourTable");
+  }
 }

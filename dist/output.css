@@ -798,6 +798,10 @@ video {
   background-image: url('../assets/desktop/bg-image-daytime.jpg');
 }
 
+.bg-imageNuitTable {
+  background-image: url('../assets/desktop/bg-image-nighttime.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
