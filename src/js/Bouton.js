@@ -6,7 +6,7 @@ class Bouton {
     this.chevron = document.getElementById(idChevron);
     this.label = document.getElementById(idLabel);
     this.expansion = document.getElementById("expansion");
-    this.quote = document.getElementById("quote");
+    this.quote = document.getElementById("ctnQuote");
 
     this.ajouterListeners();
   }
